@@ -22,12 +22,13 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
 import java.nio.file.Path;
 
 public class Lesson06_Layout extends Application {
   @Override
   public void start(Stage stage) throws Exception {
-    stage.getIcons().add(new Image(Path.of("src/main/resources/pict/icon.png").toAbsolutePath().toString()));
+    stage.getIcons().add(new Image(new FileInputStream("src/main/resources/pict/icon.png")));
     Group root = new Group();
     Scene scene = new Scene(root, 640, 480);
 

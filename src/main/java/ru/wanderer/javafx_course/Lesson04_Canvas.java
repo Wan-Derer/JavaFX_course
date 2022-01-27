@@ -15,12 +15,14 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
 
-import java.nio.file.Path;
+import java.io.FileInputStream;
 
 public class Lesson04_Canvas extends Application {
   @Override
   public void start(Stage stage) throws Exception {
-    stage.getIcons().add(new Image(Path.of("src/main/resources/pict/icon.png").toAbsolutePath().toString()));
+
+    stage.getIcons().add(new Image(new FileInputStream("src/main/resources/pict/icon.png")));
+
     Group root = new Group();
     Scene scene = new Scene(root, 640, 480);
 

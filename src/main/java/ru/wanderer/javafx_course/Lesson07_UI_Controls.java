@@ -26,11 +26,22 @@ import java.io.FileInputStream;
 public class Lesson07_UI_Controls extends Application {
   @Override
   public void start(Stage stage) throws Exception {
-    stage.getIcons().add(new Image(new FileInputStream("src/main/resources/pict/icon.png")));
+    Image icon = new Image(new FileInputStream("src/main/resources/pict/icon.png"));
+    stage.getIcons().add(icon);
+
+    // https://stackoverflow.com/questions/11253772/setting-the-default-application-icon-image-in-java-swing-on-os-x
+    // это работает на Java не новее 1.8
+    // https://community.oracle.com/tech/developers/discussion/3938294/unable-to-use-com-apple-eawt-package
+//    try {
+//      ImageIcon imageIcon = new ImageIcon("src/main/resources/pict/icon.png");
+//      getApplication().setDockIconImage(imageIcon.getImage());
+//    } catch (Exception ignored) {    }
+
     Group root = new Group();
     Scene scene = new Scene(root, 640, 480);
 
     MenuBar menuBar = new MenuBar();
+    menuBar.setUseSystemMenuBar(true);        // for Mac OS
     Menu menuFile = new Menu("Файл");
     MenuItem menuItemOpen = new MenuItem("Открыть");
     MenuItem menuItemSave = new MenuItem("Сохранить");

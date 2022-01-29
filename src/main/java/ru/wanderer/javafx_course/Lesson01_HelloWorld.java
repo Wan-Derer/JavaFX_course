@@ -7,6 +7,8 @@ https://www.jetbrains.com/help/idea/javafx.html
 https://docs.oracle.com/javase/8/javafx/get-started-tutorial/index.html
 https://docs.oracle.com/javase/8/javafx/graphics-tutorial/
 https://docs.oracle.com/javase/8/javafx/api/toc.htm
+
+https://habr.com/ru/post/474292/
  */
 
 package ru.wanderer.javafx_course;

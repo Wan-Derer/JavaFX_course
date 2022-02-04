@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="JavaFX_course" options="--add-exports java.desktop/com.apple.eawt=ru.wanderer.javafx_course" />
+      <module name="JavaFX_course" options="" />
     </option>
   </component>
 </project>

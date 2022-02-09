@@ -1,0 +1,22 @@
+.root {
+    -fx-font-size: 20;
+    -fx-background-color: yellow;
+
+}
+
+#but1{
+    -fx-background-color: aqua;
+    -fx-border-width: 3;
+    -fx-border-color: black;
+    -fx-border-radius: 30;
+
+}
+
+.button {
+    -fx-background-color: blue;
+}
+
+.otherStyle{
+    -fx-background-color: violet;
+
+}

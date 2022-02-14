@@ -26,7 +26,7 @@ public class Lesson15_Media extends Application {
     stage.getIcons().add(icon);
     Group root = new Group();
     Scene scene = new Scene(root, 640, 480);
-    stage.setTitle("Приложение 14");
+    stage.setTitle("Приложение 15");
     stage.setScene(scene);
     stage.show();
 

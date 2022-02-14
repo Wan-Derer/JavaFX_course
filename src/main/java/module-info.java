@@ -7,6 +7,7 @@ module ru.wanderer.javafx_course {
     requires javafx.swing;
     requires java.desktop;
   requires javafx.media;
+  requires jdk.jsobject;
 
   opens ru.wanderer.javafx_course to javafx.fxml;
     exports ru.wanderer.javafx_course;
